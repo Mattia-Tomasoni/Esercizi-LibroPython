@@ -23,9 +23,9 @@ elif esercizio == "25":
     candidati.sort()
     print(candidati)
     if voti1 < voti2:
-        print(candidato1, candidato2)
+        print(candidato2, candidato1)
     elif voti2 < voti1:
-        print(candidato2, candidato2)
+        print(candidato1, candidato2)
 
 #-------------------
 
@@ -41,7 +41,7 @@ elif esercizio == "26":
             stipendi.append(stipendio)
     totstipendi = len(stipendi)
     sumstipendi = sum(stipendi)
-    media = sumstipendi/sumstipendi
+    media = sumstipendi/totstipendi
     print("Questa è la media degli stipendi dei dipendenti: ", media, "$")
 
 #-------------------
