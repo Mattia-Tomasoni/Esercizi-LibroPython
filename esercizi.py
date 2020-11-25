@@ -50,11 +50,13 @@ elif esercizio == "27":
     print("ESERCIZIO 27")
     print("Programma calcolo veicoli transitati")
     auto = []
+    c = 0
     while True:
         transito = int(input("Quante auto sono transitate oggi? "))
         if transito == 0:
             break
         else:
+            c += 1
             auto.append(transito)
     sumauto = sum(auto)
-    print("Queste sono le auto transitate in totale: ", sumauto)
+    print("Queste sono le auto transitate in totale: ", sumauto, "in", c, "giorni")
